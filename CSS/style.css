@@ -85,7 +85,7 @@ main{
 .sobremi{
     text-align: center;
     font-size: 20px;
-    margin: 20px 300px;
+    margin: 20px 200px;
 }
 
 .listas{
@@ -94,6 +94,15 @@ main{
     padding-top: 30px;
     text-align: center;
 
+}
+
+.listas button{
+    height: 50PX;
+    width: 190px;
+    font-size: 20px;
+    background: var(--background-color);
+    color: var(--text-color-white);
+    cursor: pointer;
 }
 
 .hobbies, .tareas{
@@ -112,6 +121,7 @@ h3{
 .listas li{
     text-align: left;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .horario{
@@ -135,8 +145,8 @@ th, td{
 
 .formulario{
     width: 100%;
-    margin: auto;
     text-align: center;
+    padding: 20px 0 20px 0px;
 }
 form p{
     width: 60px;
@@ -145,10 +155,13 @@ form p{
 form h3{
     color: var(--text-color-white);
 }
-form input{
+form input,form #ta_mensaje{
     width: 480px;
     margin: 0 20px;
     border-radius: 10px;
+}
+form #ta_mensaje{
+    height: 80px;
 }
 form label{
     display: flex;
@@ -160,3 +173,47 @@ form label{
     background-color: var(--background-color);
     border-radius: 10px;
 }
+
+.button{
+    width: 60px;
+}
+footer{
+    width: 100%;
+    margin: 10px 30px 0 30px;
+    padding: 20px 0 30px 0;
+    background-color: rgba(0,0,0);
+}
+.main_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+.contacto_footer{
+    margin-top: 10px;
+}
+.main_footer li, .text-footer {
+    color: var(--text-color-white);
+}
+.main_footer h4{
+    font-size: 30px;
+    padding-bottom: 70px;
+}
+.main_footer li{
+    margin: 10px 0 10px 0;
+}
+
+.main_footer .foto_footer{
+    width: 200px;
+    border-radius: 60px;
+}
+
+.main_footer ul{
+    list-style: none;
+    text-align: left;
+}
+
+
+

@@ -17,7 +17,7 @@
             <li><a href="#listas">Hobbies</a></li>
             <li><a href="#listas">Tareas Priorizadas</a></li>
             <li><a href="#horarios">Horario</a></li>
-            <li><a href="">Formulario</a></li>
+            <li><a href="#formulario">Formulario</a></li>
         </ul>
         <a href="https://www.github.com/JuanGuzmanG"><img id="icon" src="resource/github.png" alt="github"></a>
         <a href="https://www.linkedin.com/in/juanguzmang/"><img id="icon" src="resource/linkedin.png" alt="github"></a>
@@ -38,18 +38,19 @@
         <section id="listas" class="listas">
             <ul class="hobbies">
                 <h3>Hobbies</h3>
-                <li>leer libros de suspenso y terror</li>
-                <li>Ver peliculas y leer sobre Cine</li>
-                <li>Programar mini proyectos</li>
-                <li>Jugar juegos de mesa</li>
-                <li>Jugar Videojuegos</li>
+                <li class="tarea" id="tarea">leer libros de suspenso y terror</li>
+                <li class="tarea" id="tarea">Ver peliculas y leer sobre Cine</li>
+                <li class="tarea" id="tarea">Programar mini proyectos</li>
+                <li class="tarea" id="tarea">Jugar juegos de mesa</li>
+                <li class="tarea" id="tarea">Jugar Videojuegos</li>
             </ul>
+            <button onclick="ayuda()">Interaccion de eventos</button>
             <ol class="tareas">
                 <h3>Tareas</h3>
-                <li>Trabajar</li>
-                <li>Trabajos TalentoTech</li>
-                <li>Proyectos Personales</li>
-                <li>Adelantar Tesis</li>
+                <li class="tarea" id="tarea">Trabajar</li>
+                <li class="tarea" id="tarea">Trabajos TalentoTech</li>
+                <li class="tarea" id="tarea">Proyectos Personales</li>
+                <li class="tarea" id="tarea">Adelantar Tesis</li>
             </ol>
         </section>
         <section id="horarios" class="horario">
@@ -93,21 +94,31 @@
                 </tbody>
             </table>
         </section>
-        <section class="formulario">
+        <section id="formulario" class="formulario">
             <h3>Formulario</h3>
-            <form action="">
-                <label><p>Nombre</p><input type="text" name="Nombre" value="Nombre"> </label>
-                <label><p>Asunto</p><input type="text" name="Asunto" value="Asunto"> </label>
-                <label><p>Correo</p><input type="text" name="Mensaje" value="Mensaje"> </label>
+            <form id="form" action="">
+                <label><p>Email</p><input  id="email" type="email" name="email" placeholder="email"> </label>
+                <label><p>Nombre</p><input id="nombre"  type="text" name="Nombre" placeholder="nombre"> </label>
+                <label><p>Asunto</p><input id="asunto"  type="text" name="Asunto" placeholder="asunto"> </label>
+                <label><p>Correo</p><textarea name="mensaje" id="ta_mensaje" placeholder="mensaje"></textarea> </label>
                 <input class="button" type="submit">
             </form>
         </section>
     </main>
     <footer>
         <div class="main_footer">
-            <div class="contacto_footer">Contacto</div>
-            <div class="name_footer">Juan Jose Guzman</div>
-            <div class="redes_footer">Redes sociales</div>
+            <div class="contacto_footer">
+                <h4 class="text-footer">Contacto</h4>
+                <ul>
+                    <li>Tel: 3776466</li>
+                    <li>cel: 3012455591</li>
+                    <li>juanjguzman15@gmail.com</li>
+                </ul>
+            </div>
+            <div class="name_footer">
+                <h3 class="text-footer">Juan Jose Guzman</h3>
+                <img class="foto_footer" src="/resource/Foto.jpeg" alt="">
+            </div>
         </div>
     </footer>
 
